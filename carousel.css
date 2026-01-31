@@ -1,0 +1,59 @@
+/* Tech Carousel styles */
+.tech-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 60px;
+  background: rgba(3, 3, 7, 0.4);
+  border: 1px solid rgba(0, 255, 157, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 14px 0;
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+}
+.carousel-track {
+  display: inline-flex;
+  gap: 40px;
+  animation: none;
+}
+.carousel-item {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border: 1px solid var(--primary-color);
+  background: rgba(0, 255, 157, 0.05);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.carousel-item:hover {
+  background: rgba(0, 255, 157, 0.15);
+  color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.3);
+}
+
+/* RGB border effect is handled globally in style.css but ensuring compatibility */
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: var(--rgb-gradient);
+    background-size: 200% 200%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+.carousel-item:hover::after {
+    opacity: 1;
+    animation: rgb-border 3s linear infinite;
+}

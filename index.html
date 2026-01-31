@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayaz Khan - Web Developer Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="carousel.css">
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="code-bg" aria-hidden="true">
+        <pre id="codeStream"></pre>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-icon">AK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-text">
+                        <h1 class="display-4 fw-bold mb-3">
+                            <span id="typewriter" class="gradient-text"></span><span class="cursor">|</span>
+                        </h1>
+                        <p class="lead mb-4">
+                            A Professional Python Developer with 2+ years of experience in building robust and scalable web applications.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                            <a href="./resume.pdf" class="btn btn-outline-light btn-lg" download="Ayaz_Khan_Resume.pdf">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <div class="python-logo-container">
+                            <i class="fab fa-python python-logo"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <img src="ayaz.jpg" alt="Ayaz Khan">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="about-text mb-3">
+                        I’m Ayaz, an IUB graduate and backend developer. I’ve spent the last two years building and fixing things with Python, Django, and Flask.
+                    </p>
+                    <p class="about-text mb-4">
+                         I’m the person you call when you need a solid API or a database that doesn't crawl. My goal is simple: write clean code that works, stays scalable, and makes your life easier. No fluff, just functional backends
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">20+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">2+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-5 justify-content-center align-items-center original-skills">
+                <!-- Python -->
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <div class="skill-original">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                             alt="Python"
+                             onerror="this.parentElement.innerHTML='<i class=\'fab fa-python\' style=\'font-size: 50px; color: #3776ab;\'></i><span class=\'skill-name\'>Python</span>'">
+                        <span class="skill-name">Python</span>
+                    </div>
+                </div>
+                <!-- Django -->
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <div class="skill-original">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" 
+                             alt="Django" class="django-logo"
+                             onerror="this.parentElement.innerHTML='<i class=\'fab fa-python\' style=\'font-size: 50px; color: #092e20;\'></i><span class=\'skill-name\'>Django</span>'">
+                        <span class="skill-name">Django</span>
+                    </div>
+                </div>
+                <!-- Flask -->
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <div class="skill-original">
+                        <img src="flask.png" alt="Flask" class="flask-logo"
+                             onerror="this.parentElement.innerHTML='<i class=\'fas fa-leaf\' style=\'font-size: 50px; color: #ffffff;\'></i><span class=\'skill-name\'>Flask</span>'">
+                        <span class="skill-name">Flask</span>
+                    </div>
+                </div>
+                <!-- DRF -->
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <div class="skill-original">
+                        <img src="drf.png" alt="DRF" class="drf-logo"
+                             onerror="this.parentElement.innerHTML='<i class=\'fas fa-code\' style=\'font-size: 50px; color: #ffffff;\'></i><span class=\'skill-name\'>DRF</span>'">
+                        <span class="skill-name">DRF</span>
+                    </div>
+                </div>
+                <!-- AWS -->
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <div class="skill-original">
+                        <img src="aws.png" alt="AWS" class="drf-logo"
+                             onerror="this.parentElement.innerHTML='<i class=\'fas fa-code\' style=\'font-size: 50px; color: #ffffff;\'></i><span class=\'skill-name\'>DRF</span>'">
+                        <span class="skill-name">AWS</span>
+                    </div>
+                </div>
+                <!-- Docker -->
+                 <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <div class="skill-original">
+                        <img src="docker.png" alt="docker" class="drf-logo"
+                             onerror="this.parentElement.innerHTML='<i class=\'fas fa-code\' style=\'font-size: 50px; color: #ffffff;\'></i><span class=\'skill-name\'>DRF</span>'">
+                        <span class="skill-name">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+               <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-blog"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AWS-Powered EDI Automation Platform</h3>
+                            <p>Built a scalable cloud-based EDI automation system with Python and Django, automating EDI workflows (850, 855, 856, 810, 870), securing SFTP/AS2 integrations, and optimizing performance using AWS SQS and EC2.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Django</span>
+                               <span class="badge bg-info">Django Rest Framework</span>
+                               <span class="badge bg-info">AWS</span>
+                                <span class="badge bg-info">PostgreSQL</span>
+                                <span class="badge bg-info">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Ticketistan</h3>
+                            <p>Developed APIs for Ticketistan (hotels, flights, authentication), collaborated with senior and frontend teams, and gained hands-on experience in Python development.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Django</span>
+                                <span class="badge bg-success">Django Rest Framework</span>
+                                <span class="badge bg-success">AWS</span>
+                                <span class="badge bg-success">Docker</span>
+                                <span class="badge bg-info">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/ayazkhan1410/Tourism-recommendation-system-using-django" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tourism Recommendation System</h3>
+                            <p>A Django web app that lets users search and filter popular travel destinations by place, city, and price range, with dynamic images and pagination</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Django</span>
+                                <span class="badge bg-info">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/ayazkhan1410/E-Commerece-Website" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-featured e-commerce platform built with HTML, CSS, JavaScript & Django </p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Django</span>
+                                <span class="badge bg-info">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                 <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/ayazkhan1410/DjangoMultiToolbox" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Automation System</h3>
+                            <p>A Django-based suite with functionalities for CSV import/export, bulk email sending, and email tracking.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Django</span>
+                                <span class="badge bg-info">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-map"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/ayazkhan1410/al-attar-cloth-house-invoice-system" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Invoice Processing System</h3>
+                            <p>Build for Local Business to Process Invoices and Manage Payments, with features like invoice generation, Order & Payment Tracking, Customer Management.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">Django</span>
+                                <span class="badge bg-info">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-center mb-5">
+                        I'd love to hear from you! Whether you have a project in mind or just want to say hello, feel free to reach out.
+                    </p>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xaqjrjyn" method="POST">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                    <div class="contact-info mt-5 pt-5 border-top">
+                        <div class="row text-center gx-lg-5 gy-4">
+                            <div class="col-md-4">
+                                <i class="fas fa-envelope contact-icon"></i>
+                                <p class="contact-text">programmingwithayaz@gmail.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fas fa-phone contact-icon"></i>
+                                <p class="contact-text">+92 (313) 0753830</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="fas fa-map-marker-alt contact-icon"></i>
+                                <p class="contact-text">Bahawalpur, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section class="social-section py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-light mb-0">Let's connect on social media</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://github.com/ayazkhan1410" class="social-link me-3"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/studywithayaz/" class="social-link me-3"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Ayaz Khan. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <!-- Neon Rain -->
+    <script src="rain.js"></script>
+    <!-- Carousel JS -->
+    <script src="carousel.js"></script>
+</body>
+</html>
